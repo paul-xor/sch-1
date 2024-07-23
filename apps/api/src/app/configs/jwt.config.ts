@@ -7,4 +7,4 @@ export const getJWTConfig = (): JwtModuleAsyncOptions => ({
   useFactory: (configService: ConfigService) => ({
     secret: configService.get('JWT_SECRET')
   })
-})
+});
